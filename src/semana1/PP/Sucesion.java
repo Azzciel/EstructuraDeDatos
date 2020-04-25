@@ -4,7 +4,7 @@ import java.io.*;
 import javax.swing.JOptionPane;
 
 class Sucesion {
-
+    final String RUTA="sucesion.dat";
     int numeroTerminos;
 
     public Sucesion(int n) {
@@ -20,15 +20,14 @@ class Sucesion {
     }
 
     public void escribirArchivo() throws IOException {
-        String ruta = "sucesion.dat";
-        FileWriter fw = new FileWriter(ruta);
+        FileWriter fw = new FileWriter(RUTA);
         BufferedWriter bw = new BufferedWriter(fw);
         PrintWriter sucesion = new PrintWriter(bw);
         for (int i = 0; i < numeroTerminos; i++) {
             sucesion.print(sucesion(i) + " ");
         }
         sucesion.close();
-        System.out.println("El archivo de salida ha sido creado: " + ruta);
+        System.out.println("El archivo de salida ha sido creado: " + RUTA);
     }
 
     public static void main(String[] args) throws IOException {

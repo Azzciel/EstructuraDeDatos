@@ -23,12 +23,24 @@ I.Responda en forma concisa y clara
             Consiste en codificar un objeto para poder trasmitirlo como una serie de bytes o
             un formato legible.
 
-II.Provea una especificación para
+II.Provea una especificación para:
     a. Crear un archivo que contenga los números perfectos comprendidos entre M y N
-
+        Respuesta:
+            -Pedir M y N ,M < N.
+            -Crear funcion numeroPerfecto que compruebe si existe un numero perfecto desde M hasta N,
+            si existe se guarda en el archivo.
+            -Crear funcion para guardar numeroPerfecto en archivo.
     b. Crear una fila secuencial para almacenar los N primeros terminos de la sucesión 3, 7, 15, 31…
-
+        Respuesta:
+            -Crear una funcion "sucesion" que sea recursiva y devuelva el termino n de la sucesion, n tiene que ser mayor a 0.
+            -Crear menu que pida el numero de terminos de la sucesion.
+            -Crear funcion para escribir el archivo con los terminos de la sucesion.
     c. Se lee una fila que contiene información, base y altura triangulos. Se quiere hallar el área mayor, área menor y el área promedio
+        Respuesta:
+            -Crear objeto triangulo con atributos base y altura.
+            -Crear funcion para leer archivo y guardar el valor de la base y altura para cada triangulo.
+            -Crear funcion que calcula el area del triangulo.
+            -Crear funcion que evalue si el area es la menor o la mayor hasta el momento y luego sume su valor en una variable suma para luego calcular el promedio.
 
 III. Provea una implementación para solo dos de los ejercicios II.
     Implementados: 
@@ -47,8 +59,9 @@ V. El ejemplo 15 funciona solo para 3 contactos.
 
 
 VI. Resuelva solo uno de los tres casos, el caso elegido n ( n se obtiene aplicando modulo 3 a la suma de los dígitos de su código de alumno, ejemplo si su código es 128, n = Modulo3(1+2+8) = 2) solo resuelva el caso 2
-    Codigo:15200126 Suma=17 17mod3=2
-
+    ----------------------------------
+    |Codigo:15200126 Suma=17 17mod3=2|
+    ----------------------------------
     Caso 0:
         a) Crear un archivo que contenga información de los alumnos del curso de estructura de datos (código, nombre Examen 1 y Examen 2).
         b) A partir del archivo creado hallar el mayor, el menor y el promedio de cada uno. Mostrar el mayor y el meor promedio.
