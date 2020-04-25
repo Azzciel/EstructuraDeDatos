@@ -1,15 +1,27 @@
 I.Responda en forma concisa y clara
     a. Cuales son las principales características de una Fila secuencial
+        Respuesta:
+            -Cada elemento ocupa un lugar fisico contiguo.
+            -El acceso empieza por el primer elemento.
+            -Es necesario recorrer todos los elementos antes que n para llegar al elemento n.
+            -No se puede realizar interseccion ni eliminacion.
+            -Reside en almacenamiento secundario(disco).
     b. Cuantas primitivas de acceso existen para tratar filas secuenciales
         Respuesta:
             Existen 5 primitivas de acceso:
                 Primer(F),Tomar(F,V),Poner(F,V),Ultimo(F),Marcar(F).
     c. En donde recide una fila secuencial creada
         Respuesta:
-            Reside en la memoria secundaria(disco).
+            En la memoria secundaria(disco).
     d. En que consiste la especificación e implementación de soluciones algorítmicas
-        
+        Respuesta:
+            -Especificacion: Hallar la solucion, debe incluir lo necesario para el uso correcto del programa,
+                y las restricciones para implementar el programa.
+            -Implementacion: Es desarrollar la especificacion con sus restricciones.
     e. En que consiste la serializacion
+        Respuesta:
+            Consiste en codificar un objeto para poder trasmitirlo como una serie de bytes o
+            un formato legible.
 
 II.Provea una especificación para
     a. Crear un archivo que contenga los números perfectos comprendidos entre M y N
