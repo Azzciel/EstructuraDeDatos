@@ -1,0 +1,52 @@
+I.Responda en forma concisa y clara
+    a. Cuales son las principales características de una Fila secuencial
+    b. Cuantas primitivas de acceso existen para tratar filas secuenciales
+        Respuesta:
+            Existen 5 primitivas de acceso:
+                Primer(F),Tomar(F,V),Poner(F,V),Ultimo(F),Marcar(F).
+    c. En donde recide una fila secuencial creada
+        Respuesta:
+            Reside en la memoria secundaria(disco).
+    d. En que consiste la especificación e implementación de soluciones algorítmicas
+        
+    e. En que consiste la serializacion
+
+II.Provea una especificación para
+    a. Crear un archivo que contenga los números perfectos comprendidos entre M y N
+
+    b. Crear una fila secuencial para almacenar los N primeros terminos de la sucesión 3, 7, 15, 31…
+
+    c. Se lee una fila que contiene información, base y altura triangulos. Se quiere hallar el área mayor, área menor y el área promedio
+
+III. Provea una implementación para solo dos de los ejercicios II.
+    Implementados: 
+        II.b -> Sucesion.java
+        II.c -> 
+
+IV. Se tiene un archivo con números enteros (2453, 123, 5674 …). 
+    Construya una solucion que verifique cuales son primos. 
+    Cuando un numero no es primo deberá mostrar la suma de sus dígitos
+
+
+V. El ejemplo 15 funciona solo para 3 contactos. 
+    Modifique la clase persona , incluya dos atributos mas, el que usted deses. 
+    Modifique para que se ingresen N contactos.
+
+
+
+VI. Resuelva solo uno de los tres casos, el caso elegido n ( n se obtiene aplicando modulo 3 a la suma de los dígitos de su código de alumno, ejemplo si su código es 128, n = Modulo3(1+2+8) = 2) solo resuelva el caso 2
+    Codigo:15200126 Suma=17 17mod3=2
+
+    Caso 0:
+        a) Crear un archivo que contenga información de los alumnos del curso de estructura de datos (código, nombre Examen 1 y Examen 2).
+        b) A partir del archivo creado hallar el mayor, el menor y el promedio de cada uno. Mostrar el mayor y el meor promedio.
+    Caso 1:
+        a. Crear un archivo que contenga información de los pacientes de un hospital ( código, nombre, sexo, diagnostico ( Sarampión, Covid, etc) fecha de ingreso y fecha de alta. A partir del archivo creado mostrar los los nombres de los pacientes, su diagnostico, fecha de ingreso y fecha de alta. Mostrar al final del reporte, el nombre del empleado que mas gano y el que menos gano.
+    Caso 2:
+        a. Crear un archivo que contenga información de los empleados de una fabrica textil (código, nombre, Sueldo básico, Numero de horas extras)
+        b. A partir del archivo creado hallar el Sueldo bruto ( sueldo básico + pago por horas extras, cada hora extra se paga 1.5 hora normal) de cada empleado. 
+           Mostrar al final del reporte, el nombre del empleado que mas gano y el que menos gano.
+
+        Caso 2:
+
+ 
