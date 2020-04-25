@@ -26,9 +26,7 @@ public class ArchivoApp4 {
             System.out.println(obj2);
             entrada.close();
 //se puede fundir en una catch Exception
-        } catch (IOException ex) {
-            System.out.println(ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (IOException | ClassNotFoundException ex) {
             System.out.println(ex);
         }
         try { //espera la pulsación de una tecla y luego RETORNO

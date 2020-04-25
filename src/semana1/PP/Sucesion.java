@@ -2,9 +2,12 @@ package semana1.PP;
 
 import java.io.*;
 import javax.swing.JOptionPane;
-
+/*
+    Crear una fila secuencial para almacenar los N primeros terminos de la sucesión 3, 7, 15, 31…
+*/
 class Sucesion {
-    final String RUTA="sucesion.dat";
+
+    final String RUTA = "./dat/sucesion.dat";
     int numeroTerminos;
 
     public Sucesion(int n) {
@@ -29,12 +32,9 @@ class Sucesion {
         sucesion.close();
         System.out.println("El archivo de salida ha sido creado: " + RUTA);
     }
+}
 
-    public static void main(String[] args) throws IOException {
-        int numeroTerminos = menu();
-        Sucesion suc = new Sucesion(numeroTerminos);
-        suc.escribirArchivo();
-    }
+class SucesionTest {
 
     public static int menu() throws IOException {
         int num;
@@ -47,5 +47,11 @@ class Sucesion {
             }
         } while (num < 0);
         return num;
+    }
+
+    public static void main(String[] args) throws IOException {
+        int numeroTerminos = menu();
+        Sucesion suc = new Sucesion(numeroTerminos);
+        suc.escribirArchivo();
     }
 }

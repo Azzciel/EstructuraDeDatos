@@ -41,11 +41,12 @@ II.Provea una especificación para:
             -Crear funcion para leer archivo y guardar el valor de la base y altura para cada triangulo.
             -Crear funcion que calcula el area del triangulo.
             -Crear funcion que evalue si el area es la menor o la mayor hasta el momento y luego sume su valor en una variable suma para luego calcular el promedio.
+            -Crear funcion para mostrar
 
 III. Provea una implementación para solo dos de los ejercicios II.
     Implementados: 
         II.b -> Sucesion.java
-        II.c -> 
+        II.c -> Area.java
 
 IV. Se tiene un archivo con números enteros (2453, 123, 5674 …). 
     Construya una solucion que verifique cuales son primos. 
