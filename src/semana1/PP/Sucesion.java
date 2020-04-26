@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 */
 class Sucesion {
 
-    final String RUTA = "./dat/sucesion.dat";
+    final String RUTA = "sucesion.dat";
     int numeroTerminos;
 
     public Sucesion(int n) {
@@ -32,6 +32,18 @@ class Sucesion {
         sucesion.close();
         System.out.println("El archivo de salida ha sido creado: " + RUTA);
     }
+    public void leerArchivo() throws IOException{
+        String linea;
+        FileReader fr = new FileReader(RUTA);
+        BufferedReader entArch = new BufferedReader(fr);
+        linea = entArch.readLine();
+        while (linea != null) {
+            System.out.println(linea + "\n");
+            //Se lee una nueva línea    
+            linea = entArch.readLine();
+        }
+        entArch.close();
+    }
 }
 
 class SucesionTest {
@@ -53,5 +65,6 @@ class SucesionTest {
         int numeroTerminos = menu();
         Sucesion suc = new Sucesion(numeroTerminos);
         suc.escribirArchivo();
+        suc.leerArchivo();
     }
 }
