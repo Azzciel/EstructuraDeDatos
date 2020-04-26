@@ -46,7 +46,7 @@ II.Provea una especificación para:
 III. Provea una implementación para solo dos de los ejercicios II.
     Implementados: 
         II.b -> Sucesion.java
-        II.c -> Area.java,Triangulo.java
+        II.c -> Area.java,Archivo.java,Triangulo.java
 
 IV. Se tiene un archivo con números enteros (2453, 123, 5674 …). 
     Construya una solucion que verifique cuales son primos. 
