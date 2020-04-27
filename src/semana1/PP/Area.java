@@ -62,7 +62,6 @@ public class Area {
         }
     }
 
-//
     static void guardarArchivo() {
         try {
             ObjectOutputStream salida = new ObjectOutputStream(new FileOutputStream(RUTA));

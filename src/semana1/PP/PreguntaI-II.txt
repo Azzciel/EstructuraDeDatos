@@ -51,13 +51,12 @@ III. Provea una implementación para solo dos de los ejercicios II.
 IV. Se tiene un archivo con números enteros (2453, 123, 5674 …). 
     Construya una solucion que verifique cuales son primos. 
     Cuando un numero no es primo deberá mostrar la suma de sus dígitos
-
+        Respuesta: Archivo.java,Prob4.java
 
 V. El ejemplo 15 funciona solo para 3 contactos. 
     Modifique la clase persona , incluya dos atributos mas, el que usted deses. 
     Modifique para que se ingresen N contactos.
-
-
+        Respuesta: 
 
 VI. Resuelva solo uno de los tres casos, el caso elegido n ( n se obtiene aplicando modulo 3 a la suma de los dígitos de su código de alumno, ejemplo si su código es 128, n = Modulo3(1+2+8) = 2) solo resuelva el caso 2
     ----------------------------------
