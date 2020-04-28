@@ -16,6 +16,13 @@ class Empleado implements Serializable {
         this.horasExtras = horasExtras;
     }
 
+    public Empleado() {
+        this.codigo="Sin codigo";
+        this.nombre="Sin nombre";
+        this.SueldoBase=0;
+        this.horasExtras=0;
+    }
+
     public double getHorasExtras() {
         return horasExtras;
     }
@@ -48,4 +55,9 @@ class Empleado implements Serializable {
         this.SueldoBase = SueldoBase;
     }
 
+    @Override
+    public String toString() {
+        return "Codigo = " + codigo + " nombre=" + nombre + " SueldoBase=" + SueldoBase + " horasExtras=" + horasExtras;
+    }
+    
 }

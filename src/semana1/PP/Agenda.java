@@ -37,16 +37,17 @@ public class Agenda implements java.io.Serializable {
 
 class TestAgenda {
 
-    static Agenda prueba = new Agenda();
+    static Agenda prueba=new Agenda();
 
     public static void main(String[] args) {
+        prueba = (Agenda) Archivo.leer(Agenda.RUTA, prueba);
         menu();
     }
 
     public static void menu() {
         int opc;
         do {
-            opc=0;
+            opc = 0;
             try {
                 opc = Integer.valueOf(JOptionPane.showInputDialog("1.Añadir Contacto\n"
                         + "2.Ver Contactos\n"
@@ -58,7 +59,7 @@ class TestAgenda {
                     agregar();
                     break;
                 case 2:
-                    prueba=(Agenda)Archivo.leer(Agenda.RUTA, prueba);
+
                     prueba.verContactos();
                     break;
                 case 0:
@@ -68,8 +69,9 @@ class TestAgenda {
             }
         } while (opc != 0);
     }
-    public static void agregar(){
-        Persona nuevo=new Persona();
+
+    public static void agregar() {
+        Persona nuevo = new Persona();
         nuevo.setNombre(JOptionPane.showInputDialog("Nombre"));
         nuevo.setTelefono(JOptionPane.showInputDialog("Numero"));
         nuevo.setDNI(JOptionPane.showInputDialog("DNI"));

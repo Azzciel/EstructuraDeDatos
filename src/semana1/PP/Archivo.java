@@ -13,7 +13,7 @@ class Archivo {
                 a.add(entrada.readObject());
             }
         } catch (FileNotFoundException ex) {
-            System.out.println(ex.getMessage());
+            System.out.println("No existe el archivo: "+RUTA);
         } catch (IOException | ClassNotFoundException ex) {
             System.out.println("Archivo leido.");
         }
@@ -25,14 +25,13 @@ class Archivo {
                 a=entrada.readObject();
             
         } catch (FileNotFoundException ex) {
-            System.out.println(ex.getMessage());
+            System.out.println("No existe el archivo: "+RUTA);
         } catch (IOException | ClassNotFoundException ex) {
             System.out.println("Archivo leido.");
         }
         
         return a;
     }
-    
     
     public static void guardar(String RUTA, ArrayList a) {
         try {
